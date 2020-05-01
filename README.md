@@ -23,13 +23,13 @@ Zyre.js 2.x is currently available as beta, which uses the rewritten zeromq.js 6
 npm
 
 ```bash
-npm install react-native-zyre zyre.js
+npm install react-native-zyre zyre.js @olehs/react-native-zeromq react-native-get-random-values react-native-os react-native-tcp-socket react-native-udp
 ```
 
 or yarn
 
 ```bash
-yarn add react-native-zyre zyre.js postinstall-postinstall
+yarn add react-native-zyre zyre.js @olehs/react-native-zeromq react-native-get-random-values react-native-os react-native-tcp-socket react-native-udp postinstall-postinstall
 ```
 
 ## Documentation
