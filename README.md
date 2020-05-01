@@ -20,8 +20,24 @@ Zyre.js 2.x is currently available as beta, which uses the rewritten zeromq.js 6
 
 ## Installation
 
+npm
+
 ```bash
 npm install react-native-zyre @olehs/react-native-zeromq react-native-get-random-values react-native-os react-native-tcp-socket react-native-udp
+```
+
+or yarn
+
+```bash
+yarn add react-native-zyre @olehs/react-native-zeromq react-native-get-random-values react-native-os react-native-tcp-socket react-native-udp postinstall-postinstall
+```
+
+in your package.json
+
+```diff
+ "scripts": {
++  "postinstall": "patch-package --patch-dir node_modules/react-native-zyre/patches"
+ }
 ```
 
 ## Documentation
@@ -31,7 +47,7 @@ A full jsdoc documentation can be found [here](https://interpretor.github.io/zyr
 ## Usage
 
 ```js
-const Zyre = require("react-native-zyre");
+import Zyre from "react-native-zyre";
 ```
 
 Creates a new zyre.js instance (arguments are optional).
@@ -39,7 +55,6 @@ Creates a new zyre.js instance (arguments are optional).
 ```js
 const zyre = new Zyre({
   name: "foo", // Name of the zyre node
-  iface: "eth0", // Network interface
   headers: {
     // Headers will be sent on every new connection
     foo: "bar",
