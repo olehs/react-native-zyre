@@ -1,6 +1,6 @@
 {
   "name": "react-native-zyre",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React-Native port of Zyre - an open-source framework for proximity-based peer-to-peer applications",
   "main": "index.js",
   "scripts": {
